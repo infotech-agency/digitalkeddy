@@ -19,11 +19,15 @@ import ThreeDImageCarousel from "@/components/lightswind/3d-image-carousel";
 import ImageSlider3D from "@/components/lightswind/3d-image-slider";
 import DemoRadialScrollGalleryBento from "@/components/portfolio-and-image-gallery";
 import PremiumBlogSection from "@/components/Blogs";
+import { StaggerTestimonials } from "@/components/stagger-testimonials";
+import SparkleNavbar from "@/components/lightswind/sparkle-navbar";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
       <Navbar />
+      
+     
       <Hero />
       <About />
       <MacbookScrollDemo/>
@@ -41,6 +45,9 @@ export default function Home() {
         <ImageSlider3D/>
       {/* <ImageReveal/> */}
       {/* <CTA /> */}
+      <div className="h-screen">
+      <StaggerTestimonials/>
+      </div>
       <Footer />
     </main>
   );

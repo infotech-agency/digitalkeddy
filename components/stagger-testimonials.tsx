@@ -153,7 +153,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         //   ? "z-10 bg-primary text-primary-foreground border-primary" 
         //   : "z-0 bg-card text-card-foreground border-border hover:border-primary/50"
         isCenter
-  ? "z-10 bg-blue-600 text-white border-blue-600"
+  ? "z-10 bg-[#A13FCC] text-white "
   : "z-0 bg-white text-black border-gray-300 hover:border-blue-400"
       )}
       style={{
@@ -189,7 +189,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
       />
       <h3 className={cn(
         "text-base sm:text-xl font-medium",
-        isCenter ? "text-primary-foreground" : "text-foreground"
+        isCenter ? "text-primary-foreground" : "text-black"
       )}>
         "{testimonial.testimonial}"
       </h3>
@@ -255,7 +255,7 @@ export const StaggerTestimonials: React.FC = () => {
           />
         );
       })}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 ">
         <button
           onClick={() => handleMove(-1)}
           className={cn(

@@ -1,117 +1,4 @@
-// "use client";
-// import React from "react";
-// import Link from "next/link";
-// import { ArrowUpRight } from "lucide-react";
-// import { FaTwitter, FaInstagram, FaLinkedin, FaDribbble } from "react-icons/fa";
 
-// export const Footer = () => {
-//   return (
-//     <footer className="bg-black pt-24 pb-8 relative overflow-hidden border-t border-white/5">
-//       {/* Glow Effects */}
-//       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-primary/20 blur-[150px] pointer-events-none rounded-full" />
-
-//       <div className="container mx-auto px-6 relative z-10">
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20">
-          
-//           {/* Brand Info */}
-//           <div className="lg:col-span-5">
-//             <Link href="#" className="flex items-center gap-2 mb-6 group inline-flex">
-//               <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform shadow-[0_0_20px_rgba(255,43,43,0.4)]">
-//                 <span className="font-heading font-bold text-white text-xl">D</span>
-//               </div>
-//               <span className="font-heading font-bold text-2xl tracking-tight text-white">
-//                 Digital <span className="text-primary">Keddy</span>
-//               </span>
-//             </Link>
-//             <p className="text-white/60 text-lg max-w-sm leading-relaxed mb-8">
-//               We create award-winning digital experiences that elevate brands and drive exponential growth.
-//             </p>
-//             <div className="flex gap-4">
-//               <SocialLink href="#" icon={<FaTwitter size={20} />} />
-//               <SocialLink href="#" icon={<FaInstagram size={20} />} />
-//               <SocialLink href="#" icon={<FaLinkedin size={20} />} />
-//               <SocialLink href="#" icon={<FaDribbble size={20} />} />
-//             </div>
-//           </div>
-
-//           {/* Quick Links */}
-//           <div className="lg:col-span-2 lg:col-start-7">
-//             <h4 className="text-white font-bold mb-6 text-lg">Company</h4>
-//             <ul className="space-y-4">
-//               <FooterLink href="#about">About Us</FooterLink>
-//               <FooterLink href="#services">Services</FooterLink>
-//               <FooterLink href="#projects">Work</FooterLink>
-//               <FooterLink href="#process">Process</FooterLink>
-//               <FooterLink href="#">Careers</FooterLink>
-//             </ul>
-//           </div>
-
-//           {/* Services */}
-//           <div className="lg:col-span-2">
-//             <h4 className="text-white font-bold mb-6 text-lg">Services</h4>
-//             <ul className="space-y-4">
-//               <FooterLink href="#">Web Development</FooterLink>
-//               <FooterLink href="#">UI/UX Design</FooterLink>
-//               <FooterLink href="#">SEO Optimization</FooterLink>
-//               <FooterLink href="#">Meta Ads</FooterLink>
-//               <FooterLink href="#">Performance Mktg</FooterLink>
-//             </ul>
-//           </div>
-
-//           {/* Contact */}
-//           <div className="lg:col-span-2">
-//             <h4 className="text-white font-bold mb-6 text-lg">Contact</h4>
-//             <ul className="space-y-4 text-white/60">
-//               <li>hello@digitalkeddy.com</li>
-//               <li>+1 (555) 123-4567</li>
-//               <li className="mt-4 pt-4 border-t border-white/10">
-//                 123 Innovation Drive<br />
-//                 Tech City, TC 90210
-//               </li>
-//             </ul>
-//           </div>
-
-//         </div>
-
-//         {/* Big Text */}
-//         <div className="w-full border-t border-white/10 pt-12 pb-6 flex flex-col md:flex-row justify-between items-center gap-6">
-//           <h1 className="font-heading text-6xl md:text-[10vw] font-bold text-white/5 tracking-tighter leading-none select-none pointer-events-none">
-//             DIGITAL KEDDY
-//           </h1>
-//         </div>
-
-//         <div className="flex flex-col md:flex-row justify-between items-center text-white/40 text-sm">
-//           <p>&copy; {new Date().getFullYear()} Digital Keddy. All rights reserved.</p>
-//           <div className="flex gap-6 mt-4 md:mt-0">
-//             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-//             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => (
-//   <a 
-//     href={href}
-//     className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:border-primary hover:bg-primary/10 transition-all duration-300"
-//   >
-//     {icon}
-//   </a>
-// );
-
-// const FooterLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-//   <li>
-//     <Link 
-//       href={href} 
-//       className="text-white/60 hover:text-white transition-colors flex items-center gap-1 group w-max"
-//     >
-//       {children}
-//       <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
-//     </Link>
-//   </li>
-// );
 
 "use client"
 
@@ -290,7 +177,7 @@ export const Footer = () => {
                 {[
                   { icon: Mail, text: "hello@digitalkeddy.com" },
                   { icon: Phone, text: "+1 (555) 123-4567" },
-                  { icon: MapPin, text: "123 Innovation Drive, Tech City" },
+                  { icon: MapPin, text: "Malviya Nagar, Delhi" },
                 ].map(({ icon: Icon, text }) => (
                   <li key={text} className="flex items-start gap-2.5">
                     <Icon size={14} className="mt-0.5 flex-shrink-0" style={{ color: "rgba(139,92,246,0.7)" }} />

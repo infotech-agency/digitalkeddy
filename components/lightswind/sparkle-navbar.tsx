@@ -1,4 +1,5 @@
 // @ts-nocheck
+"use client"
 import React, { useState, useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 
@@ -279,7 +280,7 @@ export const SparkleNavbar: React.FC<SparkleNavbarProps> = ({
 
       <nav className="navigation-menu" ref={navRef}>
         <ul>
-          {items.map((item, index) => (
+          {items?.map((item, index) => (
             <li key={item} className={index === activeIndex ? "active" : ""}>
               <button
                 ref={(el) => {

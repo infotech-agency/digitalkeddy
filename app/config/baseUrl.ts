@@ -1,0 +1,1 @@
+export const BASE_URL="https://beige-zebra-352859.hostingersite.com"
